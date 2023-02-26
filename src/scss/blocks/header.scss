@@ -1,0 +1,51 @@
+.header {
+    background-color: $bg-main-color;
+    transition: background-color .2s ease-out;
+    &__wrapper {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.nav {
+    background-color: $bg-secondary-color;
+    transition: background-color .2s ease-out;
+    height: 56px;
+    box-shadow: 5px 5px 10px rgba(2,87,191,.12);
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        cursor: pointer;
+        color: $grey-dark;
+        transition: color .2s;
+        &:hover {
+            color: $blue
+        }
+    }
+    &__link {
+        position: relative;
+        text-decoration: none;
+        font-size: 16px;
+        color: $grey-dark;
+        transition: color .2s ease-out;
+        &:hover {
+            color:$blue
+        }
+    }
+    &__subitem {
+        white-space: nowrap;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}

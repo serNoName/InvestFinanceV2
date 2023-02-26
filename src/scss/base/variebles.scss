@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #4E6297;
+    --secondary-color: #91CF3665;
+    --bg-primary-color: #FAFAFA;
+    --bg-secondary-color: #f4f8fa;
+    --grey-dark: #3B3B3B;
+    --grey-mid: #7A7A7A;
+    --grey-light: #E0E0E0;
+    --blue: #0887D6;
+}
+$primary: var(--primary-color);
+$secondary: var(--secondary-color);
+$bg-main-color: var(--bg-primary-color);
+$bg-secondary-color: var(--bg-secondary-color);
+$grey-dark: var(--grey-dark);
+$grey-mid: var(--grey-mid);
+$grey-light: var(--grey-light);
+$blue: var(--blue)

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+    "title": "Главная"
+})
+
+<body class="body">
+
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <div class="content">
+            <button class="triger-theme" title="change theme" aria-label="Сменить тему">Change theme</button>
+        </div>
+
+        @@include('html/footer.html', {})
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="files/js/jquery-ui.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>

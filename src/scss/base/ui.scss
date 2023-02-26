@@ -1,0 +1,26 @@
+.ui{
+    &-tooltip {
+        background-color: $bg-secondary-color;
+        padding: .3em .8em;
+        border: 1px solid $grey-light;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.05);
+        font-size: 14px;
+        color: $grey-dark
+    }
+}
+.dropdown {
+    position: absolute;
+    display: none;
+    list-style: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    &-nav {
+        background-color: $bg-secondary-color;
+        box-shadow: 0px 28px 22px rgba(189, 205, 213, 0.45);
+    }
+    &__trigger {
+        position: relative;
+    }
+}
