@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Описание сайта Invest Finance">
+    <meta name="title" content="Invest Finance">
 
     <link rel="stylesheet" href="files/css/normalize.min.css">
     <link rel="stylesheet" href="files/css/jquery-ui.structure.min.css">
@@ -22,14 +23,14 @@
     <div class="container">
         <div class="header__wrapper">
             <a href="index.html" class="header__logo">
-                <img src="assets/img/logo/logo.svg" alt="logo" width="192" height="64">
+                <img src="assets/img/logo/logo.svg" alt="logo" width="192" height="64" aria-label="Логотип">
             </a>
         </div>
     </div>
     <nav class="nav">
         <div class="container">
-            <ul class="nav__list">
-                <span class="magic-line hidden"></span>
+            <ul class="nav__list" aria-label="Навигационное меню">
+                <span class="magic-line hidden" aria-hidden="true"></span>
                 <li class="nav__item dropdown__trigger">
                     <span>FOREX</span>
                     <ul class="dropdown">
@@ -86,7 +87,7 @@
 </header>
 
         <div class="content">
-            <button class="triger-theme" title="change theme" aria-label="Сменить тему">Change theme</button>
+            <button class="triger-theme" title="change theme" aria-hidden="true">Change theme</button>
         </div>
 
         <footer class="footer">
