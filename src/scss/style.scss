@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 body {
     min-height: 100vh;
@@ -42,6 +43,7 @@ img, svg {
 @import 'base/text.scss';
 @import 'base/ui.scss';
 @import 'base/other.scss';
+@import 'base/fonts.scss';
 
 @import 'blocks/header.scss';
 @import 'blocks/footer.scss';
