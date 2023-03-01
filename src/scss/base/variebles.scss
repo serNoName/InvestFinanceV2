@@ -3,16 +3,22 @@
     --secondary-color: #91CF3665;
     --bg-primary-color: #FAFAFA;
     --bg-secondary-color: #f4f8fa;
-    --grey-dark: #3B3B3B;
-    --grey-mid: #7A7A7A;
     --grey-light: #E0E0E0;
     --blue: #0887D6;
+    --shadow: 5px 5px 10px rgba(2,87,191,.12);
+    --grey-text: #7A7A7A;
+    --dark-text: #3B3B3B;
+    --white-text: #fff;
+    --border-color: #e4e4e4;
 }
 $primary: var(--primary-color);
 $secondary: var(--secondary-color);
 $bg-main-color: var(--bg-primary-color);
 $bg-secondary-color: var(--bg-secondary-color);
-$grey-dark: var(--grey-dark);
-$grey-mid: var(--grey-mid);
 $grey-light: var(--grey-light);
-$blue: var(--blue)
+$blue: var(--blue);
+$shadow: var(--shadow);
+$dark-text: var(--dark-text);
+$grey-text: var(--grey-text);
+$white-text: var(--white-text);
+$border-color: var(--border-color);

@@ -6,7 +6,7 @@
         border-radius: 8px;
         box-shadow: 2px 2px 5px rgba(0,0,0,.05);
         font-size: 14px;
-        color: $grey-dark
+        color: $dark-text
     }
 }
 .dropdown {
@@ -22,5 +22,19 @@
     }
     &__trigger {
         position: relative;
+    }
+}
+.btn {
+    border: none;
+    background-color: $primary;
+    color: $grey-light;
+    border-radius: 0;
+    &_sm {
+        display: grid;
+        place-items: center;
+        width: 180px;
+        height: 38px;
+        color: $white-text;
+        border-radius: 8px;
     }
 }

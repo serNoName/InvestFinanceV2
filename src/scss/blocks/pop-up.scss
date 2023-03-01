@@ -1,0 +1,31 @@
+.notification {
+    position: fixed;
+    left: 100px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: $bg-secondary-color;
+    border-radius: 12px;
+    box-shadow: $shadow;
+    max-width: 400px;
+    row-gap: 16px;
+    border: 1px solid $border-color;
+    &__body {
+        display: flex;
+        column-gap: 6px;
+    }
+    &__ico {
+        width: 80px;
+        height: 80px;
+        &_cookie {
+            background: url('../img/ico/cookie.svg') center center no-repeat
+        }
+    }
+    &__descr {
+        color: $dark-text;
+        font-size: 14px;
+        line-height: 120%; /* 17/14 */
+        font-weight: 400;
+    }
+}
