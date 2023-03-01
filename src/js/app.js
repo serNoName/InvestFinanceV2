@@ -1,20 +1,22 @@
-import * as flsFunctions from './modules/functios.js';
-import { magicLine } from './modules/magic-line.js';
-import { dropdown } from './modules/dropdown.js';
-import { cookies } from './modules/cookie.js';
+import { MagicLine } from './modules/magic-line.js';
+import { Dropdown } from './modules/dropdown.js';
+import { ColorTheme } from './modules/color-theme.js';
+import * as Cookie from './modules/cookie.js';
 
-magicLine(true);
-dropdown(true);
-cookies;
+if (Cookie.getCookie('theme-color') == 'dark') {
+    $('body').addClass('body_dark');
+}
 
-// magicLine(false);
+
 
 $(document).ready(function() {
+    Cookie.alertCookie();
+    MagicLine(true);
+    Dropdown(true);
+
+    ColorTheme();
+
     $( '[title]' ).tooltip({
         show: { effect: "blind", duration: 1000 },
-    });
-
-    $('.triger-theme').on('click', function() {
-        $('.body').toggleClass('body_dark')
     });
 })

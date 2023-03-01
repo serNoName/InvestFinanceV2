@@ -2,5 +2,15 @@
     &_dark {
         --bg-primary-color: #191a21;
         --bg-secondary-color: #252731;
+        --border-color: #333;
+        --dark-text: #c4c4c4;
+        .header__theme {
+            opacity: .2;
+            filter: grayscale(1);
+            &:hover {
+                opacity: 0.7;
+                filter: grayscale(0.2);
+            }
+        }
     }
 }

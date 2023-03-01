@@ -23,13 +23,38 @@
     <div class="container">
         <div class="header__wrapper">
             <a href="index.html" class="header__logo">
-                <img src="assets/img/logo/logo.svg" alt="logo" width="192" height="64" aria-label="Логотип">
+                <img src="assets/img/logo/logo.svg" alt="logo" width="192" height="64">
             </a>
+            <div class="header__inner">
+                <button class="header__theme trigger-theme" title="Сменить цветовую тему"></button>
+                <div class="header__langs dropdown__trigger">
+                    <span class="header__lang header__lang-current header__lang-ru">RU</span>
+                    <div class="dropdown">
+                        <ul class="dropdown__wrapper">
+                            <li class="header__flag">
+                                <a href="#" class="header__lang header__lang-en">
+                                    <span>EN</span>
+                                </a>
+                            </li>
+                            <li class="header__flag">
+                                <a href="#"  class="header__lang header__lang-es">
+                                    <span>es</span>
+                                </a>
+                            </li>
+                            <li class="header__flag">
+                                <a href="#" class="header__lang header__lang-ar">
+                                    <span>ar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <nav class="nav">
         <div class="container">
-            <ul class="nav__list" aria-label="Навигационное меню">
+            <ul class="nav__list">
                 <li class="magic-line hidden" aria-hidden="true"></li>
                 <li class="nav__item dropdown__trigger">
                     <span>FOREX</span>
@@ -87,21 +112,25 @@
 </header>
 
         <div class="content">
-            <button class="triger-theme" title="change theme" aria-label="Сменить цветовую тему сайта">Change theme</button>
+
         </div>
 
         <div class="overlay"></div>
 <div class="notification notification_cookie">
-    <div class="notification__body">
-        <div class="notification__col">
-            <div class="notification__ico notification__ico_cookie"></div>
+    <div class="notification__wrapper">
+        <div class="notification__body">
+            <div class="notification__col">
+                <div class="notification__ico notification__ico_cookie"></div>
+            </div>
+            <div class="notification__col">
+                <div class="notification__descr h5">Мы используем куки для наилучшего представления нашего сайта. Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает</div>
+            </div>
         </div>
-        <div class="notification__col">
-            <div class="notification__descr h5">Мы используем куки для наилучшего представления нашего сайта. Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает</div>
+        <div class="notification__footer">
+            <button class="btn btn_sm notification-close">
+                <span>OK</span>
+            </button>
         </div>
-    </div>
-    <div class="notification__footer">
-        <button class="btn btn_sm notification-close">OK</button>
     </div>
 </div>
         <footer class="footer">

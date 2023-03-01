@@ -1,8 +1,7 @@
-export function magicLine(isActive) {
+export function MagicLine(isActive) {
     let isNotHomePage = $('.nav__item.active').length,
         currentLeftPos, currentWidth,
         timeout;
-
 
     // Находим элемент с классом "magic-line" и сохраняем его в переменную
     const magicLineElm = $(".magic-line"),
