@@ -18,14 +18,6 @@ export function ColorTheme() {
         $('.body').removeClass('body_dark');
     }
 
-    // window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        //     if (e.matches) {
-            //         console.log('Темная тема оформления включена');
-            //     } else {
-                //         console.log('Светлая тема оформления включена');
-                //     }
-                // });
-
     $('.trigger-theme').on('click', function () {
 
         themeIsDark = getCookie('theme-color') == 'dark';

@@ -7,6 +7,28 @@
     <meta name="description" content="Описание сайта Invest Finance">
     <meta name="title" content="Invest Finance">
 
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../files/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../files/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../files/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../files/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../files/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../files/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../files/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../files/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="../files/img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="../files/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../files/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../files/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../files/img/favicon/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Invest Finance">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../files/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="../files/img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="../files/img/favicon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="../files/img/favicon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="../files/img/favicon/mstile-310x310.png">
+
+
     <link rel="stylesheet" href="files/css/normalize.min.css">
     <link rel="stylesheet" href="files/css/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -22,9 +44,15 @@
         <header class="header">
     <div class="container">
         <div class="header__wrapper">
-            <a href="index.html" class="header__logo">
+            <a href="index.html" class="header__logo" title="Invest Finance">
                 <img src="assets/img/logo/logo.svg" alt="logo" width="192" height="64">
             </a>
+            <form action="#" >
+                <div class="input input-header">
+                    <input type="text" class="input__field" id="search" placeholder="Поиск по сайту...">
+                    <button class="input__button input__button-loading" type="submit"></button>
+                </div>
+            </form>
             <div class="header__inner">
                 <button class="header__theme trigger-theme" title="Сменить цветовую тему"></button>
                 <div class="header__langs dropdown__trigger">
@@ -49,6 +77,17 @@
                         </ul>
                     </div>
                 </div>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
@@ -58,10 +97,10 @@
                 <li class="magic-line hidden" aria-hidden="true"></li>
                 <li class="nav__item dropdown__trigger">
                     <span>FOREX</span>
-                    <ul class="dropdown">
+                    <ul class="dropdown dropdown-nav">
                         <li class="nav__subitem"><a class="nav__link" href="#">Брокеры</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Аналитика и прогнозы</a></li>
-                        <li class="nav__subitem"><a class="nav__link" href="#">ПАММ и доверительное управление. </a></li>
+                        <li class="nav__subitem"><a class="nav__link" href="#">ПАММ и доверительное управление</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Советники, стратегии </a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Новости брокеров</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Обучение</a></li>
@@ -69,7 +108,7 @@
                 </li>
                 <li class="nav__item dropdown__trigger">
                     <span>Бинарные опционы</span>
-                    <ul class="dropdown">
+                    <ul class="dropdown dropdown-nav">
                         <li class="nav__subitem"><a class="nav__link" href="#">Брокеры</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Аналитика</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Новости брокеров</a></li>
@@ -79,7 +118,7 @@
                 </li>
                 <li class="nav__item dropdown__trigger">
                     <span>Крипторынок</span>
-                    <ul class="dropdown">
+                    <ul class="dropdown dropdown-nav">
                         <li class="nav__subitem"><a class="nav__link" href="#">Аналитика</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Обменники</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Новости бирж</a></li>
@@ -87,7 +126,7 @@
                 </li>
                 <li class="nav__item dropdown__trigger">
                     <span>Фондовый рынок</span>
-                    <ul class="dropdown">
+                    <ul class="dropdown dropdown-nav">
                         <li class="nav__subitem"><a class="nav__link" href="#">Брокеры</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Аналитика</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Биржевые фонды</a></li>
@@ -97,7 +136,7 @@
                 </li>
                 <li class="nav__item dropdown__trigger">
                     <span>Инвестору</span>
-                    <ul class="dropdown">
+                    <ul class="dropdown dropdown-nav">
                         <li class="nav__subitem"><a class="nav__link" href="#">Графики и котировки</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Экономический календарь</a></li>
                         <li class="nav__subitem"><a class="nav__link" href="#">Форекс калькулятор</a></li>
@@ -111,8 +150,14 @@
     </nav>
 </header>
 
-        <div class="content">
-
+        <div class="container">
+            <form action="#" >
+                <div class="input">
+                    <input type="text" class="input__field input__field-focus" id="search" placeholder="">
+                    <label class="input__label" for="search">Поиск по сайту...</label>
+                    <button class="input__button input__button-loading" type="submit"></button>
+                </div>
+            </form>
         </div>
 
         <div class="overlay"></div>

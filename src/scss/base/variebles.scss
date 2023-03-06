@@ -5,6 +5,7 @@
     --bg-secondary-color: #f4f8fa;
     --grey-light: #E0E0E0;
     --blue: #0887D6;
+    --green: #83BC30;
     --shadow: 5px 5px 10px rgba(2,87,191,.12);
     --grey-text: #7A7A7A;
     --dark-text: #3B3B3B;
@@ -16,7 +17,8 @@ $secondary: var(--secondary-color);
 $bg-main-color: var(--bg-primary-color);
 $bg-secondary-color: var(--bg-secondary-color);
 $grey-light: var(--grey-light);
-$blue: var(--blue);
+$blue: var(--blue); // rgba(8,135,214,1)
+$green: var(--green); // rgba(131, 188, 48, 1)
 $shadow: var(--shadow);
 $dark-text: var(--dark-text);
 $grey-text: var(--grey-text);

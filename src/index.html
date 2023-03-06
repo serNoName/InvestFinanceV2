@@ -9,8 +9,14 @@
     <div class="wrapper">
         @@include('html/header.html', {})
 
-        <div class="content">
-
+        <div class="container">
+            <form action="#" >
+                <div class="input">
+                    <input type="text" class="input__field input__field-focus" id="search" placeholder="">
+                    <label class="input__label" for="search">Поиск по сайту...</label>
+                    <button class="input__button input__button-loading" type="submit"></button>
+                </div>
+            </form>
         </div>
 
         @@include('html/pop-up.html', {})
