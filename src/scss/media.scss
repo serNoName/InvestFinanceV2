@@ -9,7 +9,16 @@
                 font-size: 18px;
             }
         }
-
+        &__col {
+            height: fit-content;
+        }
+        &--footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            column-gap: 32px;
+            row-gap: 32px;
+        }
     }
 }
 @media (max-width: 992px) {
@@ -86,6 +95,13 @@
                     left: 100%;
                     right: auto;
                 }
+            }
+        }
+    }
+    .footer {
+        &__row {
+            &--nav {
+                display: none;
             }
         }
     }

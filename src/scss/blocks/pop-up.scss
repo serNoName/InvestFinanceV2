@@ -9,6 +9,7 @@
     box-shadow: $shadow;
     max-width: 400px;
     border: 1px solid $border-color;
+    z-index: 49;
     &__wrapper {
         display: flex;
         flex-direction: column;

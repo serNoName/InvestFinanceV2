@@ -4,6 +4,7 @@
         --bg-secondary-color: #252731;
         --border-color: #333;
         --dark-text: #c4c4c4;
+        --bg-footer: #252731;
         .header__theme {
             opacity: .2;
             filter: grayscale(1);
@@ -11,6 +12,12 @@
                 opacity: 0.7;
                 filter: grayscale(0.2);
             }
+        }
+        .footer__row:not(:last-child)::before {
+            opacity: 1;
+        }
+        .footer__row--links .nav__subitem:not(:last-child)::after {
+            opacity: 1;
         }
     }
 }

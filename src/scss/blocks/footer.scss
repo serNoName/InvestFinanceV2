@@ -18,15 +18,17 @@
             column-gap: 12px;
             .nav__subitem  {
                 margin: 0;
-                &::after {
-                    position: absolute;
-                    top: 0;
-                    right: -6px;
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    background-color: $border-color;
-                    opacity: .1;
+                &:not(:last-child) {
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        right: -6px;
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        background-color: $border-color;
+                        opacity: .1;
+                    }
                 }
             }
         }

@@ -22,6 +22,7 @@
     color: $blue;
     text-decoration: none;
     cursor: pointer;
+    transition: filter .2s;
     &::before {
         position: absolute;
         content: '';
@@ -32,6 +33,6 @@
         height: 1px;
     }
     &:hover {
-        filter: invert(100%);
+        filter: invert(1);
     }
 }
