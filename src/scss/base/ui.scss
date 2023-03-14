@@ -1,4 +1,4 @@
-.ui{
+.ui {
     &-tooltip {
         background-color: $bg-secondary-color;
         padding: .3em .8em;
@@ -9,6 +9,7 @@
         color: $dark-text;
     }
 }
+
 .dropdown {
     position: absolute;
     display: none;
@@ -21,6 +22,7 @@
     z-index: 5;
     flex-direction: column;
     cursor: default;
+
     // transition: padding .2s;
     &_nav {
         background-color: $bg-secondary-color;
@@ -30,9 +32,11 @@
         border: 1px solid $border-color;
         border-top: none;
     }
+
     &__trigger {
         position: relative;
     }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -40,6 +44,7 @@
         list-style: none;
     }
 }
+
 .btn {
     position: relative;
     border: none;
@@ -51,10 +56,12 @@
     transition: background .2s;
     border: 2px solid $primary;
     overflow: hidden;
+
     span {
         z-index: 2;
         transition: color .3s, font-weight .3s;
     }
+
     &:before {
         position: absolute;
         content: '';
@@ -63,6 +70,7 @@
         background-color: $primary;
         transition: transform .3s, border-radius .2s;
     }
+
     &_sm {
         display: grid;
         place-items: center;
@@ -71,6 +79,7 @@
         color: $white-text;
         border-radius: 8px;
     }
+
     &_md {
         display: grid;
         place-items: center;
@@ -80,44 +89,54 @@
         color: $white-text;
         border-radius: 8px;
     }
+
     &_big {
         height: 68px;
         border-radius: 12px
     }
+
     &:hover {
         color: $primary;
-        span{
+
+        span {
             font-weight: 500;
         }
+
         &:before {
             transform: translateX(110%) rotate(30deg);
             border-radius: 8px
         }
     }
+
     &_broker {
         display: grid;
         place-items: center;
         z-index: 2;
         border-color: $blue;
+
         span {
             font-size: 18px;
             font-weight: 600;
             color: $blue;
         }
+
         &:before {
             transform: translateX(110%) rotate(30deg);
             background-color: $blue;
         }
+
         &:hover {
             span {
                 color: $white-text;
                 font-weight: 600;
             }
+
             &:before {
                 transform: none;
             }
         }
     }
+
     &_top {
         height: 48px;
         width: 48px;
@@ -132,23 +151,28 @@
         transition: opacity .3s, background-color .3S;
         background: $primary url('../img/ico/arrow-up.svg') center center no-repeat;
         background-size: 32px 32px;
+
         &:before {
             display: none;
         }
+
         &.hide {
             opacity: 0;
             visibility: hidden;
         }
+
         &:hover {
             background-color: $green
         }
     }
 }
+
 .input {
     position: relative;
     width: 500px;
     height: 48px;
     border-radius: 8px;
+
     &__button {
         position: absolute;
         right: 0;
@@ -162,10 +186,12 @@
         border-left: none;
         cursor: pointer;
         transition: background-color .2s;
+
         &:hover {
             background-color: $green;
         }
     }
+
     &__field {
         width: 100%;
         height: 100%;
@@ -178,10 +204,12 @@
         transition: box-shadow .2s;
         outline: none;
         font-size: 16px;
+
         &:focus {
-            box-shadow: 0 0 4px 4px rgba(8,135,214, .1), 0 0 8px 8px rgba(8,135,214, .1)
+            box-shadow: 0 0 4px 4px rgba(8, 135, 214, .1), 0 0 8px 8px rgba(8, 135, 214, .1)
         }
     }
+
     &__label {
         position: absolute;
         z-index: 2;
@@ -196,6 +224,7 @@
         padding: 2px 4px;
         border-radius: 4px;
         cursor: text;
+
         &.active {
             border: 1px solid $border-color;
             font-size: 10px;
@@ -204,8 +233,13 @@
         }
     }
 }
+
 .swiper {
     &-pagination {
         bottom: 0 !important;
     }
+}
+
+.iframe {
+    border: none;
 }
