@@ -22,7 +22,7 @@
     flex-direction: column;
     cursor: default;
     // transition: padding .2s;
-    &--nav {
+    &_nav {
         background-color: $bg-secondary-color;
         box-shadow: $shadow;
         padding: 16px 12px;
@@ -63,7 +63,7 @@
         background-color: $primary;
         transition: transform .3s, border-radius .2s;
     }
-    &--sm {
+    &_sm {
         display: grid;
         place-items: center;
         width: 180px;
@@ -71,7 +71,7 @@
         color: $white-text;
         border-radius: 8px;
     }
-    &--md {
+    &_md {
         display: grid;
         place-items: center;
         width: 180px;
@@ -80,7 +80,7 @@
         color: $white-text;
         border-radius: 8px;
     }
-    &--big {
+    &_big {
         height: 68px;
         border-radius: 12px
     }
@@ -94,7 +94,7 @@
             border-radius: 8px
         }
     }
-    &--broker {
+    &_broker {
         display: grid;
         place-items: center;
         z-index: 2;
@@ -118,7 +118,7 @@
             }
         }
     }
-    &--top {
+    &_top {
         height: 48px;
         width: 48px;
         position: fixed;

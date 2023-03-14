@@ -1,10 +1,10 @@
 .body {
     &_dark {
-        --bg-primary-color: #191a21;
-        --bg-secondary-color: #252731;
-        --border-color: #333;
-        --dark-text: #c4c4c4;
-        --bg-footer: #252731;
+        _bg-primary-color: #191a21;
+        _bg-secondary-color: #252731;
+        _border-color: #333;
+        _dark-text: #c4c4c4;
+        _bg-footer: #252731;
         .header__theme {
             opacity: .2;
             filter: grayscale(1);
@@ -16,7 +16,7 @@
         .footer__row:not(:last-child)::before {
             opacity: 1;
         }
-        .footer__row--links .nav__subitem:not(:last-child)::after {
+        .footer__row_links .nav__subitem:not(:last-child)::after {
             opacity: 1;
         }
     }

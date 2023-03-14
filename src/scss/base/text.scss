@@ -8,12 +8,12 @@
 }
 .h3 {
     font-size: 24px;
-    &--broker {
+    &_broker {
         color: $blue;
         font-weight: 700;
         margin-bottom: 12px;
     }
-    &--best {
+    &_best {
         color: $blue;
         text-align: center;
         font-weight: 700;
@@ -22,7 +22,7 @@
 }
 .h4 {
     font-size: 16px;
-    &--broker {
+    &_broker {
         color: $grey-text;
         margin-bottom: 32px;
     }
@@ -50,7 +50,7 @@
     &:hover {
         filter: invert(1);
     }
-    &--broker {
+    &_broker {
         font-size: 14px;
     }
 }

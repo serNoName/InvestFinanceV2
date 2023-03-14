@@ -12,7 +12,7 @@
         &__col {
             height: fit-content;
         }
-        &--footer {
+        &_footer {
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
@@ -26,7 +26,7 @@
         display: grid;
     }
     .dropdown {
-        &--nav {
+        &_nav {
             left: 100%;
             top: 0;
             transform: none;
@@ -103,7 +103,7 @@
     }
     .footer {
         &__row {
-            &--nav {
+            &_nav {
                 display: none;
             }
         }
@@ -111,7 +111,7 @@
 }
 @media (max-width: 768px) {
     .dropdown {
-        &--nav {
+        &_nav {
             transform: none;
             position: static;
             border-radius: 0 0 12px 12px;
@@ -127,7 +127,7 @@
         }
     }
     .nav {
-        &--header {
+        &_header {
             right: 100%;
             width: 100vw;
             padding-bottom: 0;
@@ -162,14 +162,14 @@
             }
         }
         &__list {
-            &--header {
+            &_header {
                 padding: 32px;
             }
         }
     }
     .footer {
         &__row {
-            &--links {
+            &_links {
                 flex-wrap: wrap;
                 row-gap: 12px;
             }

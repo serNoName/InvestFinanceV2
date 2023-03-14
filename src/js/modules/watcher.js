@@ -13,11 +13,11 @@ export function Watch(watchObj) {
         watchObj.width = window.innerWidth //текущая шырь экрана
 
         if (watchObj.width <= 992) {
-            $('.dropdown__trigger--header').off()
+            $('.dropdown__trigger_header').off()
 
-            $('.dropdown__trigger--header').click( function () {
+            $('.dropdown__trigger_header').click( function () {
 
-                $('.dropdown__trigger--header').removeClass('active').children('.dropdown').stop().slideUp(200)
+                $('.dropdown__trigger_header').removeClass('active').children('.dropdown').stop().slideUp(200)
 
 
                 $(this).toggleClass('active')
@@ -27,14 +27,14 @@ export function Watch(watchObj) {
 
             })
 
-            $('.nav--header').on('click', function(event) {
+            $('.nav_header').on('click', function(event) {
                 if($(event.target).is('.nav__item')) {
                   // Если клик был на дочернем элементе, ничего не делаем
                   return;
                 }
                 // Если клик был на родительском элементе, скрываем его
                 $(this).removeClass('active');
-            $('.body').removeClass('body--no-scroll')
+            $('.body').removeClass('body_no-scroll')
             $('#burger').removeClass('active')
               });
 
@@ -42,7 +42,7 @@ export function Watch(watchObj) {
                 event.stopPropagation(); // Предотвращаем распространение события на родительский элемент
               });
 
-            // $('.nav--header').click( function () {
+            // $('.nav_header').click( function () {
             //     $(this).removeClass('active')
             // })
         }

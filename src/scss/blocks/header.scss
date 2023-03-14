@@ -146,7 +146,7 @@
         padding: 0 16px;
         list-style: none;
 
-        &--footer {
+        &_footer {
             padding: 0;
             display: flex;
             flex-direction: column;
@@ -255,7 +255,7 @@
             margin-bottom: 8px;
         }
 
-        &--footer {
+        &_footer {
             font-size: 12px;
             margin: 0;
             border: none;
@@ -309,7 +309,7 @@
         transform: translate(-50%, -50%);
     }
 
-    &--footer {
+    &_footer {
         background-color: transparent;
         display: grid;
         grid-template-columns: repeat(5, auto);

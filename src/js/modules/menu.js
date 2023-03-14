@@ -2,7 +2,7 @@ export function Menu() {
     $('#burger').click(function () {
         $(this).toggleClass('active')
         $('#nav').toggleClass('active')
-        $('.body').toggleClass('body--no-scroll')
+        $('.body').toggleClass('body_no-scroll')
         // $('.overlay').stop().fadeIn('fast').addClass('active')
     })
 
