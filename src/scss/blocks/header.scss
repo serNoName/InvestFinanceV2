@@ -5,6 +5,7 @@
     width: 100%;
     transition: transform .2s ease-in-out;
     z-index: 50;
+
     // padding-top: 128px;
     &.hidden {
         transform: translateY(-72px);
@@ -80,8 +81,7 @@
             top: 50%;
             transform: translateY(-50%);
             overflow: hidden;
-            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2)
-            // border: 1px solid $border-color
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2) // border: 1px solid $border-color
         }
 
         &-ru {
@@ -173,6 +173,7 @@
         color: $dark-text;
         transition: color .2s;
         white-space: nowrap;
+        user-select: none;
 
         &:hover {
             color: $blue
@@ -269,7 +270,7 @@
                 color: $grey-text;
                 background-color: transparent;
                 border: none;
-
+                transition: color .2s cubic-bezier(.45,.05,.55,.95);
                 &:before {
                     position: absolute;
                     content: '';
@@ -278,7 +279,7 @@
                     width: 0;
                     height: 1px;
                     background-color: currentColor;
-                    transition: width .2s;
+                    transition: width .2s cubic-bezier(.45,.05,.55,.95);
                 }
             }
 
@@ -286,6 +287,7 @@
 
                 a,
                 button {
+                    color: $grey-light;
                     &:before {
                         width: 100%;
                     }

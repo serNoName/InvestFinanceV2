@@ -8,9 +8,24 @@
 }
 .h3 {
     font-size: 24px;
+    &--broker {
+        color: $blue;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &--best {
+        color: $blue;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
 }
 .h4 {
     font-size: 16px;
+    &--broker {
+        color: $grey-text;
+        margin-bottom: 32px;
+    }
 }
 .h5 {
     font-size: 14px;
@@ -35,4 +50,10 @@
     &:hover {
         filter: invert(1);
     }
+    &--broker {
+        font-size: 14px;
+    }
+}
+.title {
+    margin-bottom: 32px;
 }

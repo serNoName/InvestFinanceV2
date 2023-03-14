@@ -14,7 +14,6 @@ export function Dropdown(isActive) {
             $this = $(this)
             $this.removeClass('hover');
             timeout = setTimeout(function () {
-                console.log();
                 $this.removeClass('active');
                 currentDropdown.stop().slideUp(200);// скрываем .dropdown с классом
             }, 400)

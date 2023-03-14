@@ -22,14 +22,11 @@
     }
 }
 @media (max-width: 992px) {
-    .header {
-        background-color: $bg-secondary-color;
-    }
     .burger {
         display: grid;
     }
     .dropdown {
-        &-nav {
+        &--nav {
             left: 100%;
             top: 0;
             transform: none;
@@ -40,6 +37,12 @@
     }
     .body {
         padding-top: 72px;
+    }
+    .header {
+        background-color: $bg-secondary-color;
+        &__search {
+            display: none;
+        }
     }
     .nav {
         position: fixed;
@@ -107,7 +110,71 @@
     }
 }
 @media (max-width: 768px) {
-
+    .dropdown {
+        &--nav {
+            transform: none;
+            position: static;
+            border-radius: 0 0 12px 12px;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0;
+            margin-top: 16px;
+            .nav__link {
+                color: $border-color;
+                opacity: .9;
+            }
+        }
+    }
+    .nav {
+        &--header {
+            right: 100%;
+            width: 100vw;
+            padding-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(2px);
+            box-shadow: none;
+            &.active {
+                transform: translateX(100vw);
+            }
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            min-height: 56px;
+            padding: 16px 24px;
+            max-width: 400px;
+            justify-content: start;
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            span {
+                color: $border-color;
+                &:before {
+                    display: none;
+                }
+            }
+            &.active {
+                span {
+                    color: $blue;
+                }
+            }
+        }
+        &__list {
+            &--header {
+                padding: 32px;
+            }
+        }
+    }
+    .footer {
+        &__row {
+            &--links {
+                flex-wrap: wrap;
+                row-gap: 12px;
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
 

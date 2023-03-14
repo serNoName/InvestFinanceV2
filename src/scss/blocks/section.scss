@@ -1,0 +1,13 @@
+.section {
+    &--brokers {
+        background-color: $bg-secondary-color
+    }
+    &__2cols {
+        display: grid;
+        grid-template-columns: auto 300px;
+        column-gap: 24px
+    }
+    &__col {
+        position: relative;
+    }
+}

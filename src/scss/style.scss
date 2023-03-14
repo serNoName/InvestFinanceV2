@@ -53,8 +53,10 @@ html {
 }
 
 .body {
-    height: 300vh;
     padding-top: 128px;
+    &--no-scroll {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -71,6 +73,13 @@ html {
     height: 100%;
 }
 
+.section {
+    padding-top: 32px;
+    &:last-of-type {
+        padding-bottom: 32px;
+    }
+}
+
 
 @import 'base/mixins.scss';
 @import 'base/text.scss';
@@ -79,6 +88,11 @@ html {
 @import 'base/fonts.scss';
 
 @import 'blocks/header.scss';
+@import 'blocks/section.scss';
+@import 'blocks/broker.scss';
+@import 'blocks/best.scss';
+@import 'blocks/aside.scss';
+@import 'blocks/widget.scss';
 @import 'blocks/footer.scss';
 @import 'blocks/pop-up.scss';
 

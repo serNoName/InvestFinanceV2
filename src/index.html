@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-    "title": "Главная"
+    "title": "Главная • "
 })
 
 <body class="body">
@@ -10,18 +10,20 @@
         @@include('html/header.html', {})
 
         <div class="container">
-            <form action="#" >
+            <!-- <form action="#" >
                 <div class="input">
                     <input type="text" class="input__field input__field-focus" id="search" placeholder="">
                     <label class="input__label" for="search">Поиск по сайту...</label>
                     <button class="input__button input__button--loading" type="submit" aria-label="Поиск"></button>
                 </div>
-            </form>
+            </form> -->
         </div>
 
         @@include('html/pop-up.html', {})
         @@include('html/footer.html', {})
     </div>
+
+    <button class="btn btn--top btn-go-to-top hide" title="Вверх"></button>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="files/js/jquery-ui.min.js"></script>
