@@ -41,7 +41,7 @@ let swiper = new Swiper(".best__swiper", {
     loop: true,
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
     pagination: {
         el: ".swiper-pagination",
