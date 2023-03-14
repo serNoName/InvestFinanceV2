@@ -21,13 +21,6 @@ $(document).ready(function () {
     Watch(watchObj);
     Menu();
     GoToTop();
-
-
-
-    //активировать tooltip с атрибутом title
-    $('[title]').tooltip({
-        show: { effect: "blind", duration: 1000 },
-    });
 })
 
 
