@@ -24,8 +24,6 @@ $(document).ready(function () {
 })
 
 
-
-
 let swiper = new Swiper(".best__swiper", {
     centeredSlides: true,
     preloadFonts: false,

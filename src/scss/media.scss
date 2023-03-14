@@ -77,6 +77,13 @@
                     }
                 }
             }
+            &:hover {
+                span {
+                    &:before {
+                        transform: rotate(90deg) translateX(-30%) translateY(-4px)
+                    }
+                }
+            }
         }
         &__list {
             display: flex;
@@ -127,16 +134,20 @@
         }
     }
     .nav {
+        overflow-y: auto;
         &_header {
             right: 100%;
             width: 100vw;
             padding-bottom: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(2px);
+            background: linear-gradient(3.76deg, rgba(17, 38, 92, 0.87) 1.13%, rgba(78, 98, 151, 0) 152.31%), rgba(0, 65, 38, 0.08);
+            backdrop-filter: blur(17.5px);
             box-shadow: none;
             &.active {
                 transform: translateX(100vw);
             }
+        }
+        &__subitem {
+            white-space: normal;
         }
         &__item {
             display: flex;
@@ -147,23 +158,44 @@
             max-width: 400px;
             justify-content: start;
             backdrop-filter: blur(2px);
-            background-color: rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             border-radius: 12px;
             span {
+                position: relative;
                 color: $border-color;
+                font-weight: 600;
+                width: 100%;
                 &:before {
-                    display: none;
+                    right: 0;
+                    transform: rotate(180deg) translateY(50%);
                 }
             }
             &.active {
                 span {
-                    color: $blue;
+                    &:before {
+                        transform: rotateZ(180deg) rotateX(180deg) translateY(-50%);
+                        border-bottom: 6px solid $border-color;
+                    }
+                }
+                &:hover {
+                    span {
+                        &:before {
+                            transform: rotateZ(180deg) rotateX(180deg) translateY(-50%);
+                        }
+                    }
+                }
+            }
+            &:hover {
+                span {
+                    &:before {
+                        transform: rotate(180deg) translateY(50%)
+                    }
                 }
             }
         }
         &__list {
             &_header {
-                padding: 32px;
+                padding: 32px 12px;
             }
         }
     }

@@ -3,6 +3,7 @@ export function Menu() {
         $(this).toggleClass('active')
         $('#nav').toggleClass('active')
         $('.body').toggleClass('body_no-scroll')
+        $('.dropdown_nav').slideUp(200).parent().removeClass('active')
         // $('.overlay').stop().fadeIn('fast').addClass('active')
     })
 
